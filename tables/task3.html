@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colspan and Rowspan</title>
+    <style>
+        table, th, td {
+            border: 1px dashed black;
+        }
+        th {
+            text-align: left;
+            background-color: black;
+            color: white;
+        }
+        td {
+            padding-left: 5px;
+        }
+        tr:nth-child(odd) {
+            background-color: cyan;
+        }
+        tr:nth-child(even) {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 50%;">
+        <caption>Tablo1. Kişisel Bilgiler</caption>
+        <tr>
+            <th>Adı Soyadı</th>
+            <td colspan="2">Muhammed Ali</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telefon Numarası</th>
+            <td>999 33 033</td>
+            <td>999 33 033</td>
+        </tr>
+        <tr>
+            <td>777 33 000</td>
+            <td>777 33 000</td>
+        </tr>
+    </table>
+</body>
+</html>
